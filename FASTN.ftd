@@ -6,6 +6,7 @@ favicon: /-/saurabh-lohiya.github.io/ct-landing-page/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as ds
 -- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/header
 
 -- fastn.auto-import: ds
 -- fastn.auto-import: saurabh-lohiya.github.io/ct-landing-page/FASTN/my-ds
@@ -14,6 +15,18 @@ favicon: /-/saurabh-lohiya.github.io/ct-landing-page/favicon.ico
 
 -- fastn.sitemap:
 
-# Home Page: /
+# HOME: /index.html
+
+# PORTFOLIO: /portfolio
+
+# SERVICES: /services
+
+# PRICING: /pricing
+
+# TEAM: /team
+
+# BLOGS: /blogs
+
+# CONTACT US: /contact-us
 
 - Page with Right Sidebar: /sidebar/

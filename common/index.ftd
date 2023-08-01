@@ -1,0 +1,324 @@
+-- import: fastn/processors as pr
+
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+
+
+-- pr.sitemap-data footer-toc:
+$processor$: pr.full-sitemap
+
+
+-- pr.toc-item list footer-links:
+$processor$: pr.toc
+
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+
+
+
+
+-- record feature:
+caption title: 
+ftd.image-src icon:
+body body:
+optional string link:
+boolean odd:
+
+
+-- feature list list-of-features:
+
+-- feature: Grow Your Business
+icon: $assets.files.assets.strategy.svg
+link: landing/
+odd: true
+
+The phrasal sequence of the is now so that many campaign and benefit
+
+-- feature: Grow Your Business
+icon: $assets.files.assets.strategy.svg
+link: landing/
+odd: false
+
+The phrasal sequence of the is now so that many campaign and benefit
+
+-- feature: Grow Your Business
+icon: $assets.files.assets.strategy.svg
+link: landing/
+odd: true
+
+The phrasal sequence of the is now so that many campaign and benefit
+
+-- feature: Grow Your Business
+icon: $assets.files.assets.strategy.svg
+link: landing/
+odd: false
+
+The phrasal sequence of the is now so that many campaign and benefit
+
+-- feature: Grow Your Business
+icon: $assets.files.assets.strategy.svg
+link: landing/
+odd: true
+
+The phrasal sequence of the is now so that many campaign and benefit
+
+-- feature: Grow Your Business
+icon: $assets.files.assets.strategy.svg
+link: landing/
+odd: false
+
+The phrasal sequence of the is now so that many campaign and benefit
+
+-- end: list-of-features
+
+
+
+
+
+-- record plan-feature:
+caption title:
+ftd.image-src src:
+
+
+
+-- plan-feature list basic-plan:
+
+-- plan-feature: Full Access
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Source Files
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Free Appointments
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Enhanced Security
+src: $assets.files.assets.tick.svg
+
+-- end: basic-plan
+
+
+
+
+
+-- plan-feature list standard-plan:
+
+-- plan-feature: Full Access
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Source Files
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Free Appointments
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Enhanced Security
+src: $assets.files.assets.tick.svg
+
+-- end: standard-plan
+
+
+
+
+
+-- plan-feature list professional-plan:
+
+-- plan-feature: Full Access
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Source Files
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Free Appointments
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Enhanced Security
+src: $assets.files.assets.tick.svg
+
+-- end: professional-plan
+
+
+
+
+-- record contact-info:
+caption label:
+string info:
+ftd.image-src icon: 
+
+
+-- contact-info list contact-details:
+
+-- contact-info: Phone
+info: +152 534-468-854
+icon: $assets.files.assets.phone.svg
+
+-- contact-info: Email
+info: contact@example.com
+icon: $assets.files.assets.email.svg
+
+-- contact-info: Location
+info: C/54 Northwest Freeway, Suite 558, Houston, USA 485
+icon: $assets.files.assets.location.svg
+
+-- end: contact-details
+
+
+
+
+-- record project-info:
+caption title:
+string tag:
+ftd.image-src src:
+ftd.image-src icon:
+
+
+
+-- project-info list catalogue:
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- project-info: Mockup Collection
+tag: Mockup
+icon: $assets.files.assets.camera.svg
+src: $assets.files.assets.project-info.jpeg
+
+-- end: catalogue
+
+
+
+-- record team-member-info:
+caption name:
+string designation:
+ftd.image-src src:
+ftd.image-src social-icon-1:
+ftd.image-src social-icon-2:
+ftd.image-src social-icon-3:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+
+-- team-member-info list team-members:
+
+-- team-member-info: Calvin Carlo
+designation: Designor
+src: $assets.files.assets.calvin.jpeg
+social-icon-1: $assets.files.assets.meta.svg
+social-link-1: /
+social-icon-2: $assets.files.assets.insta.svg
+social-link-2: /
+social-icon-3: $assets.files.assets.twitter.svg
+social-link-3: /
+
+-- team-member-info: Calvin Carlo
+designation: Designor
+src: $assets.files.assets.calvin.jpeg
+social-icon-1: $assets.files.assets.meta.svg
+social-link-1: /
+social-icon-2: $assets.files.assets.insta.svg
+social-link-2: /
+social-icon-3: $assets.files.assets.twitter.svg
+social-link-3: /
+
+-- team-member-info: Calvin Carlo
+designation: Designor
+src: $assets.files.assets.calvin.jpeg
+social-icon-1: $assets.files.assets.meta.svg
+social-link-1: /
+social-icon-2: $assets.files.assets.insta.svg
+social-link-2: /
+social-icon-3: $assets.files.assets.twitter.svg
+social-link-3: /
+
+-- team-member-info: Calvin Carlo
+designation: Designor
+src: $assets.files.assets.calvin.jpeg
+social-icon-1: $assets.files.assets.meta.svg
+social-link-1: /
+social-icon-2: $assets.files.assets.insta.svg
+social-link-2: /
+social-icon-3: $assets.files.assets.twitter.svg
+social-link-3: /
+
+-- end: team-members
+
+
+
+
+-- record social:
+ftd.image-src icon:
+string link:
+
+
+
+-- social list social-medias:
+
+-- social:
+icon: $assets.files.assets.meta.svg
+link: /
+
+-- social:
+icon: $assets.files.assets.insta.svg
+link: /
+
+-- social:
+icon: $assets.files.assets.twitter.svg
+link: /
+
+-- social:
+icon: $assets.files.assets.email.svg
+link: /
+
+-- end: social-medias

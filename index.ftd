@@ -1,40 +1,1787 @@
--- my-ds.page: Welcome to doc-site
+-- import: fastn/processors as pr
+-- import: saurabh-lohiya.github.io/ct-landing-page/common 
+-- import: fastn-community.github.io/header as h
+
+-- integer max-width: 1140
+
+-- ftd.color border: #dee2e6
+
+-- ftd.color orange: #ff5714
+
+-- ftd.color ff57141a: #ff57141a
+
+-- ftd.color text-strong: #24272c
+
+-- ftd.color text: #8492A6
+
+-- ftd.color cta-primary: #24272c
+
+-- ftd.color bg-color: #333333
+
+-- ftd.shadow shadow:
+color: #eee
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 25
+inset-body: false
+spread.px: 5
+
+-- ftd.shadow shadow-light:
+color: #eee
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 2
+inset-body: false
+spread.px: 2
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 
--- ds.h3: 🎯 Used by?
 
-Our all documentation sites uses this `doc-site` theme.
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
 
--- ds.h2: Learn fastn and become a pro?
+-- ftd.column:
+width: fill-container
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- header: Upstart
+sections: $common.sitemap.sections
+logo: $assets.files.assets.site-logo.svg
+social-icon-1: $assets.files.assets.meta.svg
+social-link-1: /
+social-icon-2: $assets.files.assets.insta.svg
+social-link-2:
+social-icon-3: $assets.files.assets.twitter.svg
+social-link-3:
 
--- end: my-ds.page
+
+
+-- hero: Build your audiance and sale more
+src: $assets.files.assets.hero-bg.jpeg
+link: landing/
+cta-primary: Get started
+cta-primary-link: /
+cta-secondary: WATCH NOW
+cta-secondary-link: /
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- end: hero
+
+
+
+-- features-card: We Transform ideas into digital outcomes
+features: $common.list-of-features
+tag: WHAT WE DO?
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- end: features-card
+
+
+-- projects: Our Works & Projects
+tag: PORTFOLIO
+cta-label: Get Started !
+cta-link: /
+catalogue: $common.catalogue
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+
+-- promo-banner: Ready to start your next web project now?
+src: $assets.files.assets.promo-banner.png
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+
+
+
+-- pricing: PRICING PLANS
+tag: PLANS
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+
+
+
+-- team: Latest News
+tag: BLOGS
+team-members: $common.team-members
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- articles: Latest News
+tag: BLOGS
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- article: Building Your Corporate Identity from Upstart
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- article: The Dark Side of Overnight Success
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- article: The Right Hand of Business IT World
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- end: articles
+
+
+
+
+-- contact-us: Get In Touch !
+tag: CONTACT US
+contact-details: $common.contact-details
+
+Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.
+
+-- contact-us-form:
+
+-- end: contact-us
+
+
+
+
+-- footer: Upstart
+copyright: © 2023 Upstart. Design with  by Shreethemes.
+logo: $assets.files.assets.logo.svg
+socials: $common.social-medias
+
+-- end: ftd.column
+
+
+
+
+
+
+
+
+
+
+-- component hero:
+caption title:
+optional body body:
+optional string link:
+optional ftd.image-src src:
+optional boolean $cta-hover: false
+optional string info:
+optional string cta-primary: 
+optional string cta-primary-link:
+optional string cta-secondary: 
+optional string cta-secondary-link:
+optional boolean align-right:
+children child:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+
+-- ftd.row:
+z-index: 2
+max-width.fixed.px: $max-width
+spacing: space-between
+margin-top.px if { ftd.device != "mobile" }: 200
+padding-top.px: 20
+wrap: true
+opacity: 1
+
+-- ftd.column:
+width.fixed.percent if { ftd.device == "desktop" }: 56
+width: fill-container
+padding-horizontal.px: 25
+padding-top.px: 20
+align-content if { ftd.device == "mobile" }: center
+
+-- ftd.text: $hero.title
+max-width.fixed.percent: 60
+color: white
+role: $inherited.types.heading-medium
+link: $hero.cta-primary-link
+text-align if { ftd.device == "mobile" }: center
+
+
+-- ftd.text:
+color: $text
+role: $inherited.types.copy-regular
+margin-top.px: 28
+link: $hero.cta-primary-link
+text-align if { ftd.device == "mobile" }: center
+
+$hero.body
+
+-- ftd.row:
+margin-top.px: 42
+spacing.fixed.px: 12
+align-content: center
+
+-- ftd.row:
+padding-horizontal.px: 20
+padding-vertical.px: 8
+border-radius.px: 5
+spacing.fixed.px: 10
+background.solid if { !hero.cta-hover }: $orange
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $hero.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero.cta-hover, v = false)
+border-color: $inherited.colors.accent.primary
+border-color if { hero.cta-hover }: $inherited.colors.accent.primary
+link: $hero.cta-primary-link
+
+-- ftd.text: $hero.cta-primary
+color if { hero.cta-hover }: $text-strong
+color: $inherited.colors.cta-primary.text
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- social-media:
+icon: $assets.files.assets.camcorder.svg
+link: /
+
+-- ftd.text: $hero.cta-secondary
+color: $text
+role: $inherited.types.label-large
+link: $hero.cta-secondary-link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+margin-top.px if { ftd.device == "mobile" }: 48
+align-content: center
+width if { ftd.device == "mobile" }: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 25
+
+-- signup-form: We are offering 14 days free trial
+name-label: Name
+name-placeholder: Name\:
+email-label: Email
+email-placeholder: Email\:
+phone-label: Phone No.
+phone-placeholder: +12 12458 34
+cta-label: Free Trial
+cta-link: /
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.image:
+anchor: parent
+src: $hero.src
+top.px: -80
+left.px: 0
+width: fill-container
+height.fixed.calc: 100vh
+
+-- ftd.column:
+anchor: parent
+top.px: -80
+left.px: 0
+width: fill-container
+height.fixed.calc: 100vh
+opacity: 0.8
+background.solid: #161c2d
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+
+-- component signup-form:
+caption title:
+string name-label:
+string name-placeholder:
+string email-label:
+string email-placeholder:
+string phone-label:
+string phone-placeholder:
+string cta-label:
+string cta-link:
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 420
+padding.px: 48
+spacing.fixed.px: 24
+shadow: $shadow-light
+border-radius.px: 10
+background.solid: white
+z-index: 1
+
+-- ftd.text: $signup-form.title
+color: $text-strong
+role: $inherited.types.heading-small
+
+-- input-group: $signup-form.name-label
+placeholder: $signup-form.name-placeholder
+
+-- input-group: $signup-form.email-label
+placeholder: $signup-form.email-placeholder
+
+-- input-group: $signup-form.phone-label
+placeholder: $signup-form.phone-placeholder
+
+-- button-lg: $signup-form.cta-label
+cta-link: $signup-form.cta-link
+
+-- end: ftd.column
+
+-- end: signup-form
+
+
+
+
+
+
+
+
+
+
+-- component input-group:
+caption title:
+string placeholder:
+
+-- ftd.column:
+spacing.fixed.px: 8
+width: fill-container
+
+-- ftd.text: $input-group.title
+color: $text-strong
+role: $inherited.types.label-large
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 12
+width: fill-container
+border-width.px: 1
+border-color: $border
+border-radius.px: 6
+color: $text
+height.fixed.px: 40
+
+-- end: ftd.column
+
+-- end: input-group
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption title:
+string cta-link:
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 8
+padding-horizontal.px: 20
+border-radius.px: 5
+background.solid if { !button.cta-hover }: $orange
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.cta-hover, v = false)
+border-color: $inherited.colors.accent.primary
+border-color if { button.cta-hover }: $inherited.colors.accent.primary
+link: $button.cta-link
+
+-- ftd.text: $button.title
+color if { button.cta-hover }: $text-strong
+color: $inherited.colors.cta-primary.text
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- end: button
+
+
+
+
+
+
+
+
+
+
+-- component button-lg:
+caption title:
+string cta-link:
+boolean $cta-hover: false
+
+-- ftd.row:
+width: fill-container
+padding-vertical.px: 8
+border-radius.px: 5
+background.solid if { !button-lg.cta-hover }: $orange
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button-lg.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button-lg.cta-hover, v = false)
+border-color: $inherited.colors.accent.primary
+border-color if { button-lg.cta-hover }: $inherited.colors.accent.primary
+link: $button-lg.cta-link
+
+-- ftd.text: $button-lg.title
+color if { button-lg.cta-hover }: $text-strong
+color: $inherited.colors.cta-primary.text
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- end: button-lg
+
+
+
+
+
+
+
+
+
+
+-- component button-tp:
+caption title:
+string cta-link:
+boolean $cta-hover: false
+
+-- ftd.row:
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button-tp.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button-tp.cta-hover, v = false)
+border-bottom-width.px if { button-tp.cta-hover }: 1
+border-color: $orange
+link: $button-tp.cta-link
+
+-- ftd.text: $button-tp.title
+color if { button-tp.cta-hover }: $orange
+color: $cta-primary
+role: $inherited.types.button-medium
+
+-- end: ftd.row
+
+-- end: button-tp
+
+
+
+
+
+
+
+
+
+
+-- component features-card:
+caption title:
+body body:
+optional string tag:
+$common.feature list features:
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 100
+align-content: center
+z-index: 1
+
+-- ftd.column:
+max-width.fixed.px: $max-width
+align-content: center
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+padding-horizontal.px if { ftd.device == "mobile"}: 25
+wrap: true
+
+-- ftd.column:
+align-content if { ftd.device == "mobile"}: center
+align-self: start
+width if { ftd.device == "mobile"}: fill-container
+width.fixed.percent: 30
+spacing.fixed.px: 8
+
+-- ftd.text: $features-card.tag
+if: { features-card.tag != NULL }
+role: $inherited.types.label-large
+color: $orange
+
+-- ftd.text: $features-card.title
+role: $inherited.types.heading-small
+color: $text-strong
+text-align if { ftd.device == "mobile"}: center
+
+-- end: ftd.column
+
+-- ftd.text:
+margin-top.px if { ftd.device == "mobile"}: 16
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+text-align if { ftd.device == "mobile"}: center
+role: $inherited.types.label-large
+color: $text
+
+$features-card.body
+
+-- end: ftd.row
+
+-- ftd.row:
+wrap: true
+spacing.fixed.px: 24
+margin-top.px: 48
+width: fill-container
+align-content: center
+
+-- features-card-details:
+$loop$: $features-card.features as $obj
+odd: $obj.odd
+title: $obj.title
+icon: $obj.icon
+body: $obj.body
+link: $obj.link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: features-card
+
+
+
+
+
+
+
+
+
+
+-- component features-card-details:
+caption title: 
+ftd.image-src icon:
+body body:
+optional string link:
+boolean $hover: false
+boolean odd: false
+
+-- ftd.column:
+width.fixed.px: 356
+padding.px: 24
+border-radius.px: 20
+shadow if { features-card-details.hover || !features-card-details.odd }: $shadow
+$on-mouse-enter$: $ftd.set-bool($a = $features-card-details.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $features-card-details.hover, v = false)
+
+-- ftd.image:
+src: $features-card-details.icon
+width.fixed.px: 85 
+
+-- ftd.text: $features-card-details.title
+link: $features-card-details.link
+role: $inherited.types.heading-tiny
+color: $text-strong
+margin-top.px: 24
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $text
+margin-top.px: 16
+margin-bottom.px: 24
+
+$features-card-details.body
+
+-- button-tp: Read More
+cta-link: /
+-- end: ftd.column
+
+-- end: features-card-details
+
+
+
+
+
+
+
+
+
+
+-- component pricing:
+caption title:
+body body:
+string tag:
+
+-- ftd.column:
+background.solid: white
+width: fill-container
+align-content: center
+z-index: 1
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width
+padding-vertical.px: 100
+align-content: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-horizontal.px: 25
+
+-- ftd.text: $pricing.tag
+role: $inherited.types.label-large
+color: $orange
+
+-- ftd.text: $pricing.title
+role: $inherited.types.heading-small
+color: $text-strong
+margin-top.px: 8
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $text
+margin-top.px: 16
+max-width.fixed.percent if { ftd.device == "desktop" }: 60
+text-align: center
+
+$pricing.body
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 24
+margin-top.px: 48
+align-content: center
+wrap: true
+
+-- pricing-plan: BASIC
+price: 9
+cta-label: Get Started
+cta-link: /
+plan: $common.basic-plan
+
+-- pricing-plan: STANDARD
+price: 39
+cta-label: Get Started
+cta-link: /
+plan: $common.standard-plan
+
+-- pricing-plan: PROFESSIONAL
+price: 99
+cta-label: Get Started
+cta-link: /
+plan: $common.professional-plan
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: pricing
+
+
+
+
+
+
+
+
+
+
+-- component pricing-plan:
+caption title:
+string price:
+string cta-label:
+string cta-link:
+$common.plan-feature list plan:
+
+-- ftd.column:
+padding-vertical.px: 48
+padding-horizontal.px: 24
+width.fixed.px: 356
+border-radius.px: 5
+shadow: $shadow-light
+
+-- ftd.text: $pricing-plan.title
+role: $inherited.types.heading-tiny
+color: $text
+
+-- ftd.row:
+
+-- ftd.text: \$
+role: $inherited.types.copy-regular
+color: $text
+margin-top.px: 8
+align-self: start
+
+-- ftd.text: $pricing-plan.price
+role: $inherited.types.heading-medium
+color: $text
+margin-top.px: 8
+
+-- ftd.text: /mo
+role: $inherited.types.copy-regular
+color: $text
+margin-top.px: 8
+align-self: end
+
+-- end: ftd.row
+
+-- ftd.column:
+spacing.fixed.px: 8
+margin-top.px: 24
+
+-- plan-feature: $obj.title
+$loop$: $pricing-plan.plan as $obj
+src: $obj.src
+
+-- end: ftd.column
+
+-- ftd.column:
+margin-top.px: 24
+width: fill-container
+
+-- button-lg: $pricing-plan.cta-label
+cta-link: $pricing-plan.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: pricing-plan
+
+
+
+
+
+
+
+
+
+
+-- component plan-feature:
+caption title:
+ftd.image-src src:
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $plan-feature.src
+width.fixed.px: 18
+height.fixed.px: 18
+
+-- ftd.text: $plan-feature.title
+role: $inherited.types.copy-regular
+color: $text
+
+-- end: ftd.row
+
+-- end: plan-feature
+
+
+
+
+
+
+
+
+
+
+-- component articles:
+caption title:
+body body:
+string tag:
+children child:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width
+padding-vertical.px: 100
+align-content: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-horizontal.px: 25
+
+-- ftd.text: $articles.tag
+role: $inherited.types.label-large
+color: $orange
+
+-- ftd.text: $articles.title
+role: $inherited.types.heading-small
+color: $text-strong
+margin-top.px: 8
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $text
+margin-top.px: 16
+max-width.fixed.percent if { ftd.device == "desktop" }: 60
+text-align: center
+
+$articles.body
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.px: 24
+margin-top.px: 48
+align-content: center
+children: $articles.child
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: articles
+
+
+
+
+
+
+
+
+
+
+-- component article:
+caption title:
+body body:
+ftd.image-src src:
+string cta-label:
+string cta-link:
+
+-- ftd.column:
+width.fixed.px: 356
+border-radius.px: 8
+shadow: $shadow-light
+
+-- ftd.image: 
+border-top-left-radius.px: 8
+border-top-right-radius.px: 8
+src: $article.src
+width.fixed.px: 356 
+height.fixed.px: 222
+
+-- ftd.column:
+padding.px: 24
+
+-- ftd.text: $article.title
+role: $inherited.types.heading-small
+color: $text
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $text
+margin-top.px: 8
+margin-bottom.px: 16
+
+$article.body
+
+-- button-tp: $article.cta-label
+cta-link: $article.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: article
+
+
+
+
+
+
+
+
+
+
+-- component contact-us:
+caption title:
+body body:
+string tag:
+$common.contact-info list contact-details:
+children child:
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 100
+background.solid: #eee
+align-content: center
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width
+align-content: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-horizontal.px: 25
+
+-- ftd.text: $contact-us.tag
+role: $inherited.types.label-large
+color: $orange
+
+-- ftd.text: $contact-us.title
+role: $inherited.types.heading-small
+color: $text-strong
+margin-top.px: 8
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $text
+margin-top.px: 16
+max-width.fixed.percent if { ftd.device == "desktop" }: 60
+text-align: center
+
+$contact-us.body
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container
+margin-top.px: 48
+wrap: true
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 25
+width.fixed.percent if { ftd.device == "desktop" }: 70
+children: $contact-us.child
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-left.px: 48
+width: fill-container
+width.fixed.percent if { ftd.device == "desktop" }: 30
+spacing.fixed.px: 24
+margin-top.px: 48
+
+-- contact-info-group: $obj.label
+$loop$: $contact-us.contact-details as $obj
+info: $obj.info
+icon: $obj.icon
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact-us
+
+
+
+
+
+
+
+
+
+
+-- component contact-us-form:
+
+-- ftd.column:
+width: fill-container
+min-width.fixed.px: 360
+background.solid: white
+border-radius.px: 8
+padding.px: 24
+shadow: $shadow-light
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.percent: 6
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 12
+width.fixed.percent: 47
+width.fixed.percent if { ftd.device == "mobile" }: 100
+border-width.px: 1
+border-color: $text
+border-radius.px: 6
+placeholder: Name:
+color: $text
+height.fixed.px: 40
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 12
+width.fixed.percent: 47
+width.fixed.percent if { ftd.device == "mobile" }: 100
+margin-top.px if { ftd.device == "mobile" }: 24
+border-width.px: 1
+border-color: $text
+border-radius.px: 6
+placeholder: Email:
+color: $text
+height.fixed.px: 40
+
+-- end: ftd.row
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 12
+width: fill-container
+border-width.px: 1
+border-color: $text
+border-radius.px: 6
+placeholder: Subject:
+color: $text
+height.fixed.px: 40
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 12
+width: fill-container
+border-width.px: 1
+border-color: $text
+border-radius.px: 6
+placeholder: Message:
+color: $text
+height.fixed.px: 160
+multiline: true
+
+-- button: Send Message
+cta-link: /
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact-us-form
+
+
+
+
+
+
+
+
+
+
+-- component contact-info-group:
+caption title:
+string info:
+ftd.image-src icon:
+
+-- ftd.row:
+spacing.fixed.px: 16
+
+-- ftd.image:
+src: $contact-info-group.icon
+width.fixed.px: 24
+height.fixed.px: 24
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text: $contact-info-group.title
+role: $inherited.types.heading-tiny
+color: $text
+
+-- ftd.text: $contact-info-group.info
+role: $inherited.types.copy-regular
+color: $text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: contact-info-group
+
+
+
+
+
+
+
+
+
+
+-- component promo-banner:
+caption title:
+body body:
+ftd.image-src src:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.column:
+align-content: center
+z-index: 2
+width.fixed.percent: 60
+padding-vertical.px: 100
+
+-- ftd.text: $promo-banner.title
+role: $inherited.types.heading-small
+color: white
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: white
+text-align: center
+margin-top.px: 16
+margin-bottom.px: 24
+
+$promo-banner.body
+
+-- button: Get Started !
+cta-link: /
+
+-- end: ftd.column
+
+-- ftd.image: 
+src: $promo-banner.src
+anchor: parent
+width: fill-container
+top.px: -200
+left.px: 0
+
+-- end: ftd.column
+
+-- end: promo-banner
+
+
+
+
+
+
+
+
+
+
+-- component projects:
+caption title:
+string tag:
+body body:
+string cta-label:
+string cta-link:
+$common.project-info list catalogue:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background.solid: #eeeeee
+z-index: 1
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width
+padding-vertical.px: 100
+align-content: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-horizontal.px: 25
+
+-- ftd.text: $projects.tag
+role: $inherited.types.label-large
+color: $orange
+
+-- ftd.text: $projects.title
+role: $inherited.types.heading-small
+color: $text-strong
+margin-top.px: 8
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $text
+margin-top.px: 16
+max-width.fixed.percent if { ftd.device == "desktop" }: 60
+text-align: center
+
+$projects.body
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 24
+margin-top.px: 48
+align-content: center
+wrap: true
+
+-- project: $obj.title
+$loop$: $projects.catalogue as $obj
+tag: $obj.tag
+bg-img: $obj.src
+icon: $obj.icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: projects
+
+
+
+
+
+
+
+
+
+
+-- component project:
+caption title:
+string tag:
+ftd.image-src bg-img:
+ftd.image-src icon:
+boolean $hover: false
+
+-- ftd.column:
+width.fixed.px: 260
+height.fixed.px: 196
+padding.px: 24
+border-radius.px: 8
+$on-mouse-enter$: $ftd.set-bool($a = $project.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $project.hover, v = false)
+
+-- ftd.column:
+if: { project.hover }
+anchor: parent
+bottom.px: 24
+left.px: 24
+z-index: 1
+
+-- ftd.text: $project.title
+role: $inherited.types.label-large
+color: white
+
+-- ftd.text: $project.tag
+role: $inherited.types.label-small
+color: white
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { project.hover }
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+anchor: parent
+top.px: 24
+right.px: 24
+z-index: 1
+
+-- ftd.image:
+src: $project.icon
+width.fixed.px: 16
+height.fixed.px: 16
+opacity: 100
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $project.bg-img
+anchor: parent
+top.px: 0
+left.px: 0
+width: fill-container
+height: fill-container
+border-radius.px: 5
+
+-- end: ftd.column
+
+-- end: project
+
+
+
+
+
+
+
+
+
+
+-- component team:
+caption title:
+string tag:
+body body:
+$common.team-member-info list team-members:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background.solid: #eeeeee
+z-index: 1
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width
+padding-vertical.px: 100
+align-content: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-horizontal.px: 25
+
+-- ftd.text: $team.tag
+role: $inherited.types.label-large
+color: $orange
+
+-- ftd.text: $team.title
+role: $inherited.types.heading-small
+color: $text-strong
+margin-top.px: 8
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $text
+margin-top.px: 16
+max-width.fixed.percent if { ftd.device == "desktop" }: 60
+text-align: center
+
+$team.body
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 24
+margin-top.px: 48
+align-content: center
+wrap: true
+
+-- member-card: $obj.name
+$loop$: $team.team-members as $obj
+designation: $obj.designation
+src: $obj.src
+social-icon-1: $obj.social-icon-1
+social-link-1: $obj.social-link-1
+social-icon-2: $obj.social-icon-2
+social-link-2: $obj.social-link-2
+social-icon-3: $obj.social-icon-3
+social-link-3: $obj.social-link-3
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: team
+
+
+
+
+
+
+
+
+
+
+-- component member-card:
+caption name:
+string designation:
+ftd.image-src src:
+ftd.image-src social-icon-1:
+ftd.image-src social-icon-2:
+ftd.image-src social-icon-3:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+boolean $hover: false
+
+-- ftd.column:
+width.fixed.px: 260
+height.fixed.px: 260
+padding.px: 24
+border-radius.px: 8
+$on-mouse-enter$: $ftd.set-bool($a = $member-card.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $member-card.hover, v = false)
+
+-- ftd.column:
+if: { member-card.hover }
+width.fixed.percent: 80
+anchor: parent
+bottom.px: 24
+left.px: 24
+z-index: 1
+align-content: center
+padding-vertical.px: 8
+background.solid: white
+border-radius.px: 5
+
+-- ftd.text: $member-card.name
+role: $inherited.types.label-large
+color: $text
+
+-- ftd.text: $member-card.designation
+role: $inherited.types.label-small
+color: $text
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { member-card.hover }
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+anchor: parent
+top.px: 24
+right.px: 24
+z-index: 1
+
+-- ftd.image:
+src: $member-card.social-icon-1
+width.fixed.px: 16
+height.fixed.px: 16
+opacity: 100
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { member-card.hover }
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+anchor: parent
+top.px: 64
+right.px: 24
+z-index: 1
+
+-- ftd.image:
+src: $member-card.social-icon-2
+width.fixed.px: 16
+height.fixed.px: 16
+opacity: 100
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { member-card.hover }
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+anchor: parent
+top.px: 104
+right.px: 24
+z-index: 1
+
+-- ftd.image:
+src: $member-card.social-icon-3
+width.fixed.px: 16
+height.fixed.px: 16
+opacity: 100
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $member-card.src
+anchor: parent
+top.px: 0
+left.px: 0
+width: fill-container
+height: fill-container
+border-radius.px: 5
+
+-- end: ftd.column
+
+-- end: member-card
+
+
+
+
+
+
+
+
+
+
+-- component header:
+caption title:
+ftd.image-src logo:
+pr.toc-item list sections:
+optional ftd.image-src social-icon-1:
+optional string social-link-1:
+optional ftd.image-src social-icon-2:
+optional string social-link-2:
+optional ftd.image-src social-icon-3:
+optional string social-link-3:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+color: white
+z-index: 1
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+spacing: space-between
+padding-vertical.px: 24
+align-content: center
+
+-- ftd.row:
+spacing.fixed.px: 12
+align-content: center
+
+-- ftd.image:
+src: $header.logo
+width.fixed.px: 24
+height.fixed.px: 24
+
+-- ftd.text: $header.title
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 18
+
+-- ftd.text: $obj.title
+$loop$: $header.sections as $obj
+role: $inherited.types.label-large
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.column:
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+
+-- ftd.image:
+src: $header.social-icon-1
+width.fixed.px: 16
+height.fixed.px: 16
+
+-- end: ftd.column
+
+-- ftd.column:
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+
+-- ftd.image:
+src: $header.social-icon-2
+width.fixed.px: 16
+height.fixed.px: 16
+
+-- end: ftd.column
+
+-- ftd.column:
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+
+-- ftd.image:
+src: $header.social-icon-3
+width.fixed.px: 16
+height.fixed.px: 16
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: header
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+caption title:
+string copyright:
+ftd.image-src logo:
+$common.social list socials:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+spacing: space-between
+padding-vertical.px: 24
+align-content: center
+
+-- ftd.row:
+spacing.fixed.px: 12
+align-content: center
+
+-- ftd.image:
+src: $footer.logo
+width.fixed.px: 24
+height.fixed.px: 24
+
+-- ftd.text: $footer.title
+role: $inherited.types.heading-small
+color: $text
+
+-- end: ftd.row
+
+-- ftd.text: $footer.copyright
+role: $inherited.types.label-large
+color: $text
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- social-media: 
+$loop$: $footer.socials as $obj
+icon: $obj.icon
+link: $obj.link
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+-- component social-media:
+ftd.image-src icon:
+string link:
+
+-- ftd.column:
+background.solid: $orange
+border-radius.percent: 50
+padding.px: 8
+
+-- ftd.image:
+src: $social-media.icon
+link: $social-media.link
+width.fixed.px: 16
+height.fixed.px: 16
+
+-- end: ftd.column
+
+-- end: social-media
+
+
+
+
+
+
+
+
+
+
+-- component roadmap:
+
+-- ftd.column:
+background.solid: white
+width: fill-container
+align-content: center
+z-index: 1
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width
+padding-vertical.px: 100
+align-content: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-horizontal.px: 25
+
+-- ftd.text: $pricing.tag
+role: $inherited.types.label-large
+color: $orange
+
+-- ftd.text: $pricing.title
+role: $inherited.types.heading-small
+color: $text
+margin-top.px: 8
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $text
+margin-top.px: 16
+max-width.fixed.percent if { ftd.device == "desktop" }: 60
+text-align: center
+
+$pricing.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: roadmap
