@@ -1,19 +1,32 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
-favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
+-- fastn.package: saurabh-lohiya.github.io/ct-landing-page
+favicon: /-/saurabh-lohiya.github.io/ct-landing-page/favicon.ico
 
 
 -- fastn.dependency: fastn-community.github.io/doc-site as ds
 -- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/header
 
 -- fastn.auto-import: ds
--- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/my-ds
--- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
+-- fastn.auto-import: saurabh-lohiya.github.io/ct-landing-page/FASTN/my-ds
+-- fastn.auto-import: saurabh-lohiya.github.io/ct-landing-page/assets
 
 
 -- fastn.sitemap:
 
-# Home Page: /
+# HOME: /index.html
+
+# PORTFOLIO: /
+
+# SERVICES: /
+
+# PRICING: /
+
+# TEAM: /
+
+# BLOGS: /
+
+# CONTACT US: /
 
 - Page with Right Sidebar: /sidebar/

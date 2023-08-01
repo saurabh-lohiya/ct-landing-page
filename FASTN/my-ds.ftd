@@ -4,7 +4,7 @@
 
 ;; ********* my-ds document **********
 
--- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
+-- common.site-logo site-logo: $assets.files.assets.logo.svg
 
 
 -- component page:
@@ -18,7 +18,7 @@ optional string document-description:
 optional ftd.raw-image-src document-image:
 
 -- ds.page: $page.title
-site-name: my-fastn
+site-name: Cortel
 site-url: index.html
 site-logo: $site-logo
 body: $page.body
