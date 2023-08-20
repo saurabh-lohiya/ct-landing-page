@@ -1,6 +1,12 @@
--- import: ds
--- import: ds/common
+-- import: fastn
 -- import: fastn-community.github.io/footer
+-- import: fastn-community.github.io/roboto-typography as typo
+-- import: fastn-community.github.io/doc-site/common
+-- import: fastn-community.github.io/doc-site/
+export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
+
+-- import: saurabh-lohiya.github.io/ct-landing-page
+export: article, articles, features-card, features-card-details, hero, signup-form, pricing, pricing-plan, projects, promo-banner, team, project, contact-us, contact-us-form
 
 ;; ********* my-ds document **********
 

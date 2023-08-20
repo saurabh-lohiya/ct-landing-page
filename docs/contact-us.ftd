@@ -1,0 +1,85 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: contact-us
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: contact-us
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.contact-us: Get In Touch !
+tag: CONTACT US
+contact-details: $common.contact-details
+
+Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.
+
+-- my-ds.contact-us-form:
+name-placeholder: Name:
+email-placeholder: Email:
+subject-placeholder: Subject:
+message-placeholder: Message:
+cta-label: Send Message
+cta-link: index.html
+
+-- end: my-ds.contact-us-form
+
+-- end: my-ds.contact-us
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.contact-us` this section is used for adding list of contact-uss
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.contact-us: Get In Touch !
+tag: CONTACT US
+contact-details: $common.contact-details
+
+\-- my-ds.contact-us-form:
+name-placeholder: Name:
+email-placeholder: Email:
+subject-placeholder: Subject:
+message-placeholder: Message:
+cta-label: Send Message
+cta-link: index.html
+
+Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.
+
+\-- end: my-ds.contact-us
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.contact-us` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `contact-us` component. It's used to add a
+title to `contact-us` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `contact-us` component. It's used to add a
+body to `contact-us` component.
+
+-- site-doc.component-property: `tag`
+type: string (`required`)
+
+It's used to add tag in `contact-us` section.
+
+-- site-doc.component-property: `contact-details`
+type: list (`required`)
+
+It's used to add list of contact details in `contact-us` section.
+
+-- end: site-doc.doc-home

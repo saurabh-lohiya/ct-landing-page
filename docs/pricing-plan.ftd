@@ -1,0 +1,68 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: pricing-plan
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: pricing-plan
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.pricing-plan: Building Your Corporate Identity from Upstart
+cta-link: /
+cta-label: Read More
+plan: $common.basic-plan
+price: 9
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.pricing-plan` this section is used for adding list of pricing-plans
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.pricing-plan: Building Your Corporate Identity from Upstart
+cta-link: /
+cta-label: Read More
+plan: $common.basic-plan
+price: 9
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.pricing-plan` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `pricing-plan` component. It's used to add a
+title to `pricing-plan` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `pricing-plan` component. It's used to add a
+body to `pricing-plan` component.
+
+-- site-doc.component-property: `price`
+type: string (`required`)
+
+It's used to add string in `pricing-plan` section.
+
+-- site-doc.component-property: `cta-label`
+type: list (`required`)
+
+It's used to add label for the button in `pricing-plan` section.
+
+-- site-doc.component-property: `cta-link`
+type: list (`required`)
+
+It's used to add link to the button component in `pricing-plan` section.
+
+-- end: site-doc.doc-home

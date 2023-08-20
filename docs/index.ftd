@@ -1,0 +1,42 @@
+-- boolean $show-modal: false
+
+
+
+
+-- site-doc.doc-home: Hero
+current-package: saurabh-lohiya.github.io/ct-landing-page
+show-tabs: false
+site-title: Feature Component
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+
+-- site-doc.output:
+colors: $ftd.default-colors
+
+-- my-ds.hero: Build your audiance and sale more
+src: $assets.files.assets.hero-bg.jpeg
+link: landing/
+cta-primary: Get started
+cta-primary-link: /
+cta-secondary: WATCH NOW
+cta-secondary-link: /
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- site-doc.header: What is a Hero component ?
+
+Hero components refer to a component where you can add all types of featured that you provide.
+
+-- site-doc.header: How to use Hero ?
+
+To use Hero components on your [fastn](https://fastn.com/) web project, add below into `FASTN.ftd`
+file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: saurabh-lohiya.github.io/ct-landing-page
+
+-- end: site-doc.output
+
+-- end: site-doc.doc-home

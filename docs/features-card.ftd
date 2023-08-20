@@ -1,0 +1,66 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: features-card
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: features-card
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.features-card: We Transform ideas into digital outcomes
+features: $common.list-of-features
+tag: WHAT WE DO?
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.features-card` this section is used for adding list of features-cards
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.features-card: We Transform ideas into digital outcomes
+features: $common.list-of-features
+tag: WHAT WE DO?
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.features-card` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `features-card` component. It's used to add a
+title to `features-card` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `features-card` component. It's used to add a
+body to `features-card` component.
+
+-- site-doc.component-property: `features`
+type: list (`required`)
+
+This is a default property of the `features-card` component. It's used to add
+list of features to `features-card` component.
+
+-- site-doc.component-property: `tag`
+type: string (`required`)
+
+It's used to add tag in `features-card` section.
+
+-- end: site-doc.doc-home

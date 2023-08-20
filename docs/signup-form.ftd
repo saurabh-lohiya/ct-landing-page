@@ -1,0 +1,76 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: signup-form
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: signup-form
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.signup-form: We are offering 14 days free trial
+name-label: Name
+name-placeholder: Name\:
+email-label: Email
+email-placeholder: Email\:
+phone-label: Phone No.
+phone-placeholder: +12 12458 34
+cta-label: Free Trial
+cta-link: /
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.signup-form` this section is used for adding list of signup-forms
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.signup-form: We are offering 14 days free trial
+name-label: Name
+name-placeholder: Name\:
+email-label: Email
+email-placeholder: Email\:
+phone-label: Phone No.
+phone-placeholder: +12 12458 34
+cta-label: Free Trial
+cta-link: /
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.signup-form` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `signup-form` component. It's used to add a
+title to `signup-form` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `signup-form` component. It's used to add a
+body to `signup-form` component.
+
+-- site-doc.component-property: `src`
+type: list (`required`)
+
+It's used to add image in `signup-form` section.
+
+-- site-doc.component-property: `cta-label`
+type: list (`required`)
+
+It's used to add label for the button in `signup-form` section.
+
+-- site-doc.component-property: `cta-link`
+type: list (`required`)
+
+It's used to add link to the button component in `signup-form` section.
+
+-- end: site-doc.doc-home
