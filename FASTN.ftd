@@ -4,29 +4,41 @@
 favicon: /-/saurabh-lohiya.github.io/ct-landing-page/favicon.ico
 
 
--- fastn.dependency: fastn-community.github.io/doc-site as ds
+-- fastn.dependency: fastn-community.github.io/doc-site as doc-site
+-- fastn.dependency: fastn-community.github.io/site-doc as site-doc
+-- fastn.dependency: fastn-community.github.io/code-block as cb
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/header
 
--- fastn.auto-import: ds
 -- fastn.auto-import: saurabh-lohiya.github.io/ct-landing-page/FASTN/my-ds
+-- fastn.auto-import: saurabh-lohiya.github.io/ct-landing-page/common
 -- fastn.auto-import: saurabh-lohiya.github.io/ct-landing-page/assets
+-- fastn.auto-import: site-doc
+-- fastn.auto-import: doc-site
+-- fastn.auto-import: cb
 
 
 -- fastn.sitemap:
 
 # HOME: /index.html
-
 # PORTFOLIO: /
-
 # SERVICES: /
-
 # PRICING: /
-
 # TEAM: /
-
 # BLOGS: /
-
 # CONTACT US: /
+# DOCS: docs/
 
-- Page with Right Sidebar: /sidebar/
+- Hero: /docs/hero/
+- Article: /docs/article/
+- Articles: /docs/articles/
+- Contact Us: /docs/contact-us/
+- Contact Us Form: /docs/contact-us-form/
+- Features Card details: /docs/features-card-details/
+- Features Card: /docs/features-card/
+- Pricing Plan: /docs/pricing-plan/
+- Pricing: /docs/pricing/
+- Projects: /docs/projects/
+- Promo Banner: /docs/promo-banner/
+- Sign Up Form: /docs/signup-form/
+- Team: /docs/team/

@@ -1,0 +1,58 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: promo-banner
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: promo-banner
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.promo-banner: Ready to start your next web project now?
+src: $assets.files.assets.promo-banner.png
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.promo-banner` this section is used for adding list of promo-banners
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.promo-banner: Ready to start your next web project now?
+src: $assets.files.assets.promo-banner.png
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.promo-banner` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `promo-banner` component. It's used to add a
+title to `promo-banner` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `promo-banner` component. It's used to add a
+body to `promo-banner` component.
+
+-- site-doc.component-property: `src`
+type: ftd.image-src (`required`)
+
+It's used to add image in `promo-banner` section.
+
+-- end: site-doc.doc-home

@@ -1,0 +1,73 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: hero
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: hero
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.hero: Build your audiance and sale more
+src: $assets.files.assets.hero-bg.jpeg
+link: landing/
+cta-primary: Get started
+cta-primary-link: /
+cta-secondary: WATCH NOW
+cta-secondary-link: /
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.hero` this section is used for adding list of heros
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.hero: Build your audiance and sale more
+src: $assets.files.assets.hero-bg.jpeg
+link: landing/
+cta-primary: Get started
+cta-primary-link: /
+cta-secondary: WATCH NOW
+cta-secondary-link: /
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.hero` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+title to `hero` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+body to `hero` component.
+
+-- site-doc.component-property: `icon`
+type: list (`required`)
+
+It's used to add image in `hero` section.
+
+-- site-doc.component-property: `link`
+type: list (`required`)
+
+It's used to add link to the button component in `hero` section.
+
+-- end: site-doc.doc-home

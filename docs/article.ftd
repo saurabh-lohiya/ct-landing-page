@@ -1,0 +1,70 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: article
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: article
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.article: Building Your Corporate Identity from Upstart
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.article` this section is used for adding list of articles
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.article: Building Your Corporate Identity from Upstart
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.article` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `article` component. It's used to add a
+title to `article` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `article` component. It's used to add a
+body to `article` component.
+
+-- site-doc.component-property: `src`
+type: list (`required`)
+
+It's used to add image in `article` section.
+
+-- site-doc.component-property: `cta-label`
+type: list (`required`)
+
+It's used to add label for the button in `article` section.
+
+-- site-doc.component-property: `cta-link`
+type: list (`required`)
+
+It's used to add link to the button component in `article` section.
+
+-- end: site-doc.doc-home

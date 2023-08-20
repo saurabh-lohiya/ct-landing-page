@@ -1,0 +1,61 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: project
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: project
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.project: John Doe
+tag: Designer
+bg-img: $assets.files.assets.camera.svg
+icon: $assets.files.assets.project-info.jpeg
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.project` this section is used for adding list of projects
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.project: John Doe
+tag: Designer
+bg-img: $assets.files.assets.camera.svg
+icon: $assets.files.assets.project-info.jpeg
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.project` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `project` component. It's used to add a
+title to `project` component.
+
+-- site-doc.component-property: `tag`
+type: String (`required`)
+
+This is a default property of the `project` component. It's used to add a
+tag to `project` component.
+
+-- site-doc.component-property: `icon`
+type: ftd.image-src (`required`)
+
+It's used to add icon in `project` section.
+
+-- site-doc.component-property: `src`
+type: ftd.image-src (`required`)
+ 
+It's used to add background image in `project` section.
+
+-- end: site-doc.doc-home

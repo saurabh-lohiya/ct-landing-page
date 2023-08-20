@@ -1,0 +1,87 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: articles
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: articles
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.articles: Latest News
+tag: BLOGS
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- my-ds.article: Building Your Corporate Identity from Upstart
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- my-ds.article: Building Your Corporate Identity from Upstart
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- my-ds.article: Building Your Corporate Identity from Upstart
+src: $assets.files.assets.1.jpg
+cta-link: /
+cta-label: Read More
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- end: my-ds.articles
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.articles` this section is used for adding list of articless
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.articles: Latest News
+tag: BLOGS
+
+Launch your campaign and benefit from our expertise on designing and 
+managing conversion centered bootstrap v5 html page.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.articles` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `articles` component. It's used to add a
+title to `articles` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `articles` component. It's used to add a
+body to `articles` component.
+
+-- site-doc.component-property: `child`
+type: child (`required`)
+
+This is a default property of the `articles` component. It's used to add
+childrens to `articles` component.
+
+-- site-doc.component-property: `tag`
+type: list (`required`)
+
+It's used to add tag in `articles` section.
+
+-- end: site-doc.doc-home

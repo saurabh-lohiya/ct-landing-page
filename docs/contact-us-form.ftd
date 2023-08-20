@@ -1,0 +1,79 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: contact-us-form
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: contact-us-form
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.contact-us-form:
+name-placeholder: Name:
+email-placeholder: Email:
+subject-placeholder: Subject:
+message-placeholder: Message:
+cta-label: Send Message
+cta-link: index.html
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.contact-us-form` this section is used for adding list of contact-us-forms
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.contact-us-form:
+name-placeholder: Name:
+email-placeholder: Email:
+subject-placeholder: Subject:
+message-placeholder: Message:
+cta-label: Send Message
+cta-link: index.html
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.contact-us-form` component.
+
+-- site-doc.component-property: `name-placeholder`
+type: Caption (`required`)
+
+This is a default property of the `contact-us-form` component. It's used to add a
+placeholder for name field to `contact-us-form` component.
+
+-- site-doc.component-property: `email-placeholder`
+type: Caption (`required`)
+
+This is a default property of the `contact-us-form` component. It's used to add a
+placeholder for Email field to `contact-us-form` component.
+
+-- site-doc.component-property: `subject-placeholder`
+type: Caption (`required`)
+
+This is a default property of the `contact-us-form` component. It's used to add a
+placeholder for Subject field to `contact-us-form` component.
+
+-- site-doc.component-property: `message-placeholder`
+type: Caption (`required`)
+
+This is a default property of the `contact-us-form` component. It's used to add a
+placeholder for Message field to `contact-us-form` component.
+
+-- site-doc.component-property: `cta-label`
+type: list (`required`)
+
+It's used to add label for the button in `contact-us-form` section.
+
+-- site-doc.component-property: `cta-link`
+type: list (`required`)
+
+It's used to add link to the button component in `contact-us-form` section.
+
+-- end: site-doc.doc-home
