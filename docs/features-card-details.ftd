@@ -1,0 +1,63 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: features-card-details
+github-url: https://github.com/saurabh-lohiya/ct-landing-page
+current-package: saurabh-lohiya.github.io/ct-landing-page
+site-title: features-card-details
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- my-ds.features-card-details: Building Your Corporate Identity from Upstart
+icon: $assets.files.assets.strategy.svg
+link: index.html
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- my-ds.features-card-details` this section is used for adding list of features-card-detailss
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- my-ds.features-card-details: Building Your Corporate Identity from Upstart
+icon: $assets.files.assets.strategy.svg
+link: index.html
+
+The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- my-ds.features-card-details` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `features-card-details` component. It's used to add a
+title to `features-card-details` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `features-card-details` component. It's used to add a
+body to `features-card-details` component.
+
+-- site-doc.component-property: `icon`
+type: list (`required`)
+
+It's used to add image in `features-card-details` section.
+
+-- site-doc.component-property: `link`
+type: list (`required`)
+
+It's used to add link to the button component in `features-card-details` section.
+
+-- end: site-doc.doc-home
